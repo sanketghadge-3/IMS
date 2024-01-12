@@ -8,6 +8,7 @@ from category import categoryClass
 from product import productClass
 from sales import salesClass
 import os,time
+#Create Images folder paste all images 
 
 class IMS:
     def __init__(self,root):
