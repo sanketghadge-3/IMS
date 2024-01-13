@@ -98,7 +98,7 @@ class IMS:
 
             cur.execute('select *  from sup13')
             supllier=cur.fetchall()
-            self.lbl_supplier.config(text=f'Total Supllier\n[ {str(len(supllier))} ]')
+            self.lbl_supplier.config(text=f'Total Supplier\n[ {str(len(supllier))} ]')
 
             cur.execute('select *  from cat13')
             Category=cur.fetchall()
@@ -106,7 +106,7 @@ class IMS:
 
             cur.execute('select *  from emp13')
             Employee=cur.fetchall()
-            self.lbl_employee.config(text=f'Total Product\n[ {str(len(Employee))} ]')
+            self.lbl_employee.config(text=f'Total Employee\n[ {str(len(Employee))} ]')
             bill=str(len(os.listdir('bill')))
             self.lbl_sales.config(text=f'Total Sales\n[ {str(bill)} ]')
             time_=time.strftime('%I:%M:%S')
